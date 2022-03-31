@@ -49,6 +49,11 @@ var app = new Vue (
             ],
             carrello: []
         },
+        created() {
+            setInterval(() => {
+                this.fotoSuccessiva();
+            }, 3000);
+        },
         methods: {
             addToCart: function(element) { 
                 console.log( element );
