@@ -3,8 +3,12 @@ var app = new Vue (
     {
         el: '#root',
         data: {
-            // array: ['nome1', 'giuseppe', 'anselmo'],
-            // arrayNomi: ['Francesco Totti', 'La governante di Cesare Cremonini', 'Il Mago Otelma', 'Marisa Laurito']
+            numeroImmagine: 0,
+            immagini: [
+                'https://source.unsplash.com/random/?offer',
+                'https://source.unsplash.com/random/?sale',
+                'https://source.unsplash.com/random/?buy'
+            ],
             products: [
                 {
                     id: 1,
@@ -68,6 +72,25 @@ var app = new Vue (
                     }
                 )
                 return total
+            },
+            fotoPrecedente() {
+                this.numeroImmagine -= 1;
+                if (this.numeroImmagine < 0)  this.numeroImmagine = (this.immagini.length - 1);
+            },
+            fotoSuccessiva() {
+                this.numeroImmagine += 1;
+                if (this.numeroImmagine < 0) {
+                    this.numeroImmagine = (this.immagini.length + 1);
+                }
+                if (this.numeroImmagine = 3) {
+                    this.numeroImmagine = 0;
+                }
+                if (this.numeroImmagine = 4) {
+                    this.numeroImmagine = 1;
+                }
+                if (this.numeroImmagine = 5) {
+                    this.numeroImmagine = 2;
+                }
             }
         }
     }
