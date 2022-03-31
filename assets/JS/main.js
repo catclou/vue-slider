@@ -5,9 +5,9 @@ var app = new Vue (
         data: {
             numeroImmagine: 0,
             immagini: [
-                'https://source.unsplash.com/random/?offer',
-                'https://source.unsplash.com/random/?sale',
-                'https://source.unsplash.com/random/?buy'
+                'https://images.unsplash.com/photo-1626379625260-7111605463e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+                'https://images.unsplash.com/photo-1600461186623-d5551c00fc85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1833&q=80',
+                'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
             ],
             products: [
                 {
