@@ -79,18 +79,7 @@ var app = new Vue (
             },
             fotoSuccessiva() {
                 this.numeroImmagine += 1;
-                if (this.numeroImmagine < 0) {
-                    this.numeroImmagine = (this.immagini.length + 1);
-                }
-                if (this.numeroImmagine = 3) {
-                    this.numeroImmagine = 0;
-                }
-                if (this.numeroImmagine = 4) {
-                    this.numeroImmagine = 1;
-                }
-                if (this.numeroImmagine = 5) {
-                    this.numeroImmagine = 2;
-                }
+                if (this.numeroImmagine > (this.immagini.length - 1)) this.numeroImmagine = 0;
             }
         }
     }
